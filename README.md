@@ -1,1 +1,2 @@
-# SignLanguageRecognition
+# hand-gesture-recognition-code
+ 

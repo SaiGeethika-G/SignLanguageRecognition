@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    <form action='/predict' method="post">
+      <div>
+          <button type="submit" >Start Recognition</button>
+      </div>
+    </form>
+-->
+
+<head>
+  <title> Gesture Recognition </title>
+  <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+      background-size: cover;
+      background-size: 100% 100%;
+    }
+    body{
+        background-color: bisque;
+    }
+    h1{
+        font-size: xxx-large;
+        text-align: center;
+        color: #fdfdfe;
+        text-shadow: 0px 0px 5px #9c5708, 0px 0px 10px #ed8b1a, 0px 0px 10px #ed8b1a,
+        0px 0px 20px #ed8b1a;
+    }
+    p{
+        text-align: center;
+        font-size: x-large;
+    }
+
+    </style>
+</head>
+<body>
+  <h1 >Real-time Sign Language Recognition</h1>
+  <br>
+  <p>
+    Place your hand in front of the camera and make a gesture that needs to be recognized.
+  </p>
+  <br>
+  <img id="bg" src="{{ url_for('video_feed') }}"> 
+
+</body>
+
+</html>
